@@ -77,149 +77,222 @@
         </div>
         <!-- Navbar & Hero End -->
 
-
-         <!-- Book a Service Start -->
-        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="row g-0">
-                    <div class="col-md-6">
-                        <div class="video">
-                        </div>
-                    </div>
-                    <div class="col-md-6 bg-dark d-flex align-items-center">
-                        <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                            <h5 class="section-title ff-secondary text-start text-primary fw-normal">Catering Service</h5>
-                            <h1 class="text-white mb-4">Book Service Online</h1>
-                            <form id="bookingForm" action="https://formspree.io/f/xwpgrbnd" method="POST">
-
-    <!-- Hidden reply email -->
-    <input type="hidden" name="_replyto" value="haridasshk1999@gmail.com">
-
-    <div class="row g-3">
-
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input 
-                    type="text" 
-                    class="form-control" 
-                    name="name" 
-                    id="name" 
-                    placeholder="Your Name" 
-                    required>
-                <label for="name">Your Name</label>
+<!-- Book a Service Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-6">
+                <div class="video"></div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input 
-                    type="text" 
-                    class="form-control" 
-                    name="Location" 
-                    id="Location" 
-                    placeholder="Your Location" 
-                    required>
-                <label for="Location">Your Location</label>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input 
-                    type="text" 
-                    class="form-control" 
-                    name="PhoneNumber" 
-                    id="PhoneNumber" 
-                    placeholder="Your PhoneNumber" 
-                    required>
-                <label for="PhoneNumber">Your PhoneNumber</label>
-            </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input 
-                    type="email" 
-                    class="form-control" 
-                    name="email" 
-                    id="email" 
-                    placeholder="Your Email" 
-                    required>
-                <label for="email">Your Email</label>
-            </div>
-        </div>
+            <div class="col-md-6 bg-dark d-flex align-items-center">
+                <div class="p-5 wow fadeInUp w-100" data-wow-delay="0.2s">
 
-        <!-- Calendar Date Picker -->
-        <div class="col-md-6">
-            <div class="form-floating">
-                <input 
-                    type="datetime-local" 
-                    class="form-control" 
-                    name="bookingDate" 
-                    id="bookingDate" 
-                    required>
-                <label for="bookingDate">Date & Time</label>
-            </div>
-        </div>
+                    <h5 class="section-title ff-secondary text-start text-primary fw-normal">
+                        Catering Service
+                    </h5>
+                    <h1 class="text-white mb-4">Book Service Online</h1>
 
-        <div class="col-md-6">
-            <div class="form-floating">
-                <select class="form-select" name="peopleCount" id="peopleCount" required>
-                    <option value="">Select People</option>
-                    <option value="1">50</option>
-                    <option value="2">100+</option>
-                    <option value="3">150+</option>
-                    <option value="4">200+</option>
-                    <option value="5">250+</option>
-                    <option value="1">300+</option>
-                    <option value="2">350+</option>
-                    <option value="3">400+</option>
-                    <option value="4">450+</option>
-                    <option value="5">500+</option>
-                    <option value="4">550+</option>
-                    <option value="5">600+</option>
-                     <option value="1">650+</option>
-                    <option value="2">700+</option>
-                    <option value="3">750+</option>
-                    <option value="4">800+</option>
-                    <option value="5">850+</option>
-                    <option value="4">900+</option>
-                    <option value="5">950+</option>
-                    <option value="5">1000+</option>
-                     <option value="4">1500+</option>
-                    <option value="5">2000+</option>
-                    <option value="5">2500+</option>
-                     <option value="5">3000+</option>
-                </select>
-                <label for="peopleCount">No of People</label>
-            </div>
-        </div>
+                    <form id="bookingForm"
+                          action="https://formspree.io/f/xwpgrbnd"
+                          method="POST">
 
-        <div class="col-12">
-            <div class="form-floating">
-                <textarea 
-                    class="form-control" 
-                    name="message" 
-                    id="message" 
-                    placeholder="Special Request" 
-                    style="height: 100px"></textarea>
-                <label for="message">Special Request</label>
-            </div>
-        </div>
+                        <input type="hidden" name="_replyto"
+                               value="haridasshk1999@gmail.com">
 
-        <div class="col-12">
-            <button class="btn btn-primary w-100 py-3" type="submit">
-                Book Now
-            </button>
-        </div>
+                        <div class="row g-3">
 
+                            <!-- Name -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="Name" required>
+                                    <label>Your Name</label>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="Location" required>
+                                    <label>Your Location</label>
+                                </div>
+                            </div>
+
+                           <!-- Phone (Validated) -->
+<div class="col-md-6">
+    <div class="form-floating">
+        <input 
+            type="tel"
+            class="form-control"
+            name="Phone"
+            required
+            pattern="[6-9][0-9]{9}"
+            maxlength="10"
+            inputmode="numeric"
+            placeholder="Phone Number">
+        <label>Phone Number</label>
     </div>
-</form>
+</div>
+
+                            <!-- Email (Optional) -->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" name="Email">
+                                    <label>Email (Optional)</label>
+                                </div>
+                            </div>
+
+                            <!-- Event Type -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <select class="form-select"
+                                            id="eventType"
+                                            name="Event Type"
+                                            required>
+                                        <option value="">Select Event Type</option>
+                                        <option value="marriage">Marriage</option>
+                                        <option value="birthday">Birthday Party</option>
+                                        <option value="engagement">Engagement</option>
+                                        <option value="housewarming">Housewarming</option>
+                                        <option value="corporate">Corporate Events</option>
+                                        <option value="puberty">Puberty Function</option>
+                                        <option value="valaikappu">Valaikappu Function</option>
+                                        <option value="industrial">Industrial Catering</option>
+                                    </select>
+                                    <label>Event Type</label>
+                                </div>
+                            </div>
+
+                            <!-- Single Event Date -->
+                            <div class="col-12" id="singleDate">
+                                <div class="form-floating">
+                                    <input type="date"
+                                           class="form-control"
+                                           name="Event Date"
+                                           id="eventDate">
+                                    <label>Event Date</label>
+                                </div>
+                            </div>
+
+                            <!-- Marriage Dates -->
+                            <div class="col-12 d-none" id="marriageDates">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="date"
+                                                   class="form-control"
+                                                   name="From Date"
+                                                   id="fromDate">
+                                            <label>From Date</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="date"
+                                                   class="form-control"
+                                                   name="To Date"
+                                                   id="toDate">
+                                            <label>To Date</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Menu Selection -->
+                            <div class="col-12 text-center mt-3">
+                                <h6 class="text-primary mb-3">Select Menu Type</h6>
+
+                                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                               type="checkbox"
+                                               name="Menu[]"
+                                               value="Breakfast">
+                                        <label class="form-check-label text-white">Breakfast</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                               type="checkbox"
+                                               name="Menu[]"
+                                               value="Lunch">
+                                        <label class="form-check-label text-white">Lunch</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                               type="checkbox"
+                                               name="Menu[]"
+                                               value="Snacks">
+                                        <label class="form-check-label text-white">Snacks</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                               type="checkbox"
+                                               name="Menu[]"
+                                               value="Dinner">
+                                        <label class="form-check-label text-white">Dinner</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Special Request -->
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control"
+                                              name="Special Request"
+                                              style="height:100px"></textarea>
+                                    <label>Special Request</label>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3"
+                                        type="submit">
+                                    Book Now
+                                </button>
+                            </div>
 
                         </div>
-                    </div>
+                    </form>
+
                 </div>
             </div>
         </div>
-        <!-- Reservation Start -->
+    </div>
+</div>
+<!-- Book a Service End -->
+
+<!-- Scripts -->
+<script>
+    const today = new Date().toISOString().split("T")[0];
+
+    document.getElementById("eventDate").min = today;
+    document.getElementById("fromDate").min = today;
+    document.getElementById("toDate").min = today;
+
+    document.getElementById("eventType").addEventListener("change", function () {
+        const marriageDates = document.getElementById("marriageDates");
+        const singleDate = document.getElementById("singleDate");
+
+        if (this.value === "marriage") {
+            marriageDates.classList.remove("d-none");
+            singleDate.classList.add("d-none");
+        } else {
+            marriageDates.classList.add("d-none");
+            singleDate.classList.remove("d-none");
+        }
+    });
+
+    document.getElementById("fromDate").addEventListener("change", function () {
+        document.getElementById("toDate").min = this.value;
+    });
+</script>
+
+
         
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -235,7 +308,7 @@
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Chennai,Kanchipuram,Vellore</p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9629429748</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>sivasakthi@gmail.com</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>srisivasakthi2026@gmail.com</p>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
